@@ -36,5 +36,9 @@ export default class FullList implements List {
     const index = this.list.findIndex((item) => item.id === id);
     this.list.splice(index, 1);
   }
+  setChecked(id: string): void {
+    const index = this.list.findIndex((item) => item.id === id);
+    !this.list[index].checked;
+  }
 }
 
