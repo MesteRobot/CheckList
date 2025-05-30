@@ -17,11 +17,11 @@ export default class FullList implements List {
   public get list(): ListItem[] {
     return this.list;
   }
-  public set list(list: ListItem[]) {
-    this.list = list;
-  }
   clear(): void {
     this.list.splice(0, this.list.length);
+  }
+  public set list(list: ListItem[]) {
+    this.list = list;
   }
   add(item: ListItem): void {
     this.list.push(item);
