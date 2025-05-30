@@ -20,6 +20,12 @@ export default class FullList implements List {
   public set list(list: ListItem[]) {
     this.list = list;
   }
+  load(): void {
+      
+  }
+  save(): void {
+      
+  }
   add(item: ListItem): void {
     this.list.push(item);
   }
