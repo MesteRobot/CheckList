@@ -32,6 +32,6 @@ constructor(){}
     }
 
     set checked(checked: boolean){
-        this._checked = checked
+        this._checked = _checked
     }
 }
