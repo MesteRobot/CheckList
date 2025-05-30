@@ -17,9 +17,6 @@ export default class FullList implements List {
   public get list(): ListItem[] {
     return this.list;
   }
-  clear(): void {
-    this.list.splice(0, this.list.length);
-  }
   public set list(list: ListItem[]) {
     this.list = list;
   }
@@ -28,6 +25,9 @@ export default class FullList implements List {
   }
   save(): void {
       
+  }
+  clear(): void {
+    this.list.splice(0, this.list.length);
   }
   add(item: ListItem): void {
     this.list.push(item);
