@@ -17,6 +17,9 @@ export default class FullList implements List {
   public get list(): ListItem[] {
     return this.list;
   }
+  clear(): void {
+    this.list.splice(0, this.list.length);
+  }
   public set list(list: ListItem[]) {
     this.list = list;
   }
