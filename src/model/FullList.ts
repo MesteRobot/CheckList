@@ -32,5 +32,9 @@ export default class FullList implements List {
   add(item: ListItem): void {
     this.list.push(item);
   }
+  remove(id: string): void {
+    const index = this.list.findIndex((item) => item.id === id);
+    this.list.splice(index, 1);
+  }
 }
 
